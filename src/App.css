@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root{
+  --primary_color:rgb(255, 81, 0);
+}
+body{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+nav{
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+  box-shadow:  0 0 2px ;
+}
+.logo{
+  width: 70px;
+  height: 70px;
+  background-image: cover;
+}
+nav ul{
+  /* border: solid; */
+  width: 55%;
+  /* color: white; */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav ul li{
+  text-decoration: none;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+  transition: .3s;
+}
+nav ul li:hover{
+  color: var(--primary_color);
+}
+.active {
+  color: var(--primary_color);
+}
+
+
+
+
+/* \\\\\\\\\\\\\\\BANNER////////////////////// */
+
+
+.banner_container{
+  /* width: 100%; */
+  height: 80.5vh;
+  /* margin: 20px  80px; */
+  /* border: solid; */
+  text-align: center;
+  padding: 100px 0 0 0;
+  background-image: url('https://gta5grand.com/wiki/wp-content/uploads/2024/01/home.png');
+  background-size:cover ;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: -99;
+}
+.banner_container h2{
+  color: white;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.banner_container p{
+  margin: 60px auto;
+  width: 60%;
+  color: rgb(255, 255, 255);
+  /* background-color: rgba(0, 0, 0, 0.39); */
+  text-shadow:0 0 20px rgb(0, 0, 0);
+}
+.overlay{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  z-index: -1000;
+}
+.banner_container h1{
+  width: 100%;
+  color: var(--primary_color);
+  margin: 170px 0 0 0 ;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  opacity: 1;
+  z-index: 99;
+}
+
+
+
+.About_Container{
+  width: 100%;
+  text-align: center;
+  /* border: solid; */
+  padding: 50px 20px;
+}
+.About_Container span{
+  color: var(--primary_color);
+  font-weight: 700;
+}
+
+.About_container-content{
+  margin: 40px auto;
+  padding: 20px;
+  width: 60%;
+  font-size: larger;
+  font-weight: 400;
+  /* border: solid; */
+}
+.About_container-content p:first-child{
+  margin-bottom: 20px;
+}
+
+
+.owners_container{
+  display: flex;
+  justify-content: space-around;
+}
+.owners{
+  /* width: 340px; */
+  height: fit-content;
+  border: solid var(--primary_color);
+  padding: 20px 40px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.owner-desc{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--primary_color);
+}
+.owner-desc p{
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+.owners img{
+  width: 80px;
+}
+
+
+
+
+
+/*------------------- price section -------------------------- */
+
+.Price_Container{
+  margin: 50px 0 100px 0;
+  padding: 50px 0 100px 0;
+  text-align: center;
+  background-color: #f6f9f8;
+}
+.Price_Container span{
+  color: var(--primary_color);
+}
+.Price_Container h1{
+  margin: 0 0 50px 0;
+}
+.price_card_container{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.Price_card{
+  padding: 40px 40px;
+  width: 400px;
+  border: solid gray;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(70, 69, 69);
+  text-align: left;
+  transition: .3s;
+}
+.Price_card:hover{
+  border: solid var(--primary_color);
+  box-shadow: 0 0 10px var(--primary_color);
+}
+.Price_card h1{
+  margin: 40px 0 10px 0;
+  color: var(--primary_color);
+}
+.Price_card h2{
+  margin: 0;
+  color: gray;
+}
+.Price_card img{
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+.Price_card button{
+  margin-top: 20px;
+  background-color: var(--primary_color);
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  padding: 10px 24px ;
+  transition: .3s;
+}
+.Price_card button:hover{
+  background-color: rgb(5, 71, 212);
+}
+
+
+
+
+/* -------------------------Location-------------------------------- */
+
+.locations{
+  text-align: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 80%;
+}
+.locations span{
+  color: var(--primary_color);
+}
+.locations h1{
+  margin: 0 0 50px 0;
+}
+.locations .map{
+  border: solid var(--primary_color);
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+
+}
+.locations .map img{
+  width: 200%;
+}
+
+
+
+/* -----------------FOOTER--------------- */
+
+
+footer{
+  margin: 100px 0 0 0 ;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;  
+  background-color: #f6f9f8;
+  /* color: white; */
+}
+footer img {
+  width: 300px;
+}
+.footer-content{
+  margin: 50px 0 0 0;
+}
+.footer-content p{
+  margin: 20px 0 0 0;
+}
+
+
+
+
+
+.book{
+  bottom: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  right: 30px;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: var(--primary_color);
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+}
